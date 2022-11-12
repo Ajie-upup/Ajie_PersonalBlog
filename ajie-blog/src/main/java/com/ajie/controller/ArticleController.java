@@ -19,11 +19,15 @@ public class ArticleController {
     @Resource
     private ArticleService articleService;
 
-
     @GetMapping("/hotArticleList")
     private ResponseResult getHotArticle() {
         ResponseResult result = articleService.getHotArticleList();
         return result;
     }
 
+    @GetMapping("/articleList")
+    public ResponseResult getArticleList(Integer pageNum,Integer pageSize,Long categoryId){
+        ResponseResult result = articleService.getArticleList(pageNum,pageSize,categoryId);
+        return result;
+    }
 }
