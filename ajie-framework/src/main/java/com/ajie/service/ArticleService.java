@@ -1,6 +1,7 @@
 package com.ajie.service;
 
 
+import com.ajie.common.ResponseResult;
 import com.ajie.model.domain.Article;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -11,4 +12,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface ArticleService extends IService<Article> {
 
+    ResponseResult getHotArticleList();
 }

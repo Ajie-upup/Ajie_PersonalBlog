@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1781706c-eaa1-4e6f-b9d8-b3f238bbd53d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1781706c-eaa1-4e6f-b9d8-b3f238bbd53d.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/HotArticleVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/BeanCopyUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/resources/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/resources/mapper/ArticleMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,34 +52,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "SELECTIVE",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/1ajieStudy/study-project/Ajie_PersonalBlog/ajie-blog/src/main/resources/sql",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "spring.configuration.checksum": "bec8a762048cc5eb3895414a7843c2a9"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;SELECTIVE&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/1ajieStudy/study-project/Ajie_PersonalBlog/ajie-blog/src/main/resources/sql&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;bec8a762048cc5eb3895414a7843c2a9&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -85,6 +92,26 @@
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\resources" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="AjieBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ajie-blog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ajie.AjieBlogApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ajie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AjieBlogApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,7 +122,17 @@
       <updated>1668161563759</updated>
       <workItem from="1668161565082" duration="4001000" />
       <workItem from="1668216657686" duration="681000" />
+      <workItem from="1668223414977" duration="246000" />
+      <workItem from="1668241459552" duration="2626000" />
     </task>
+    <task id="LOCAL-00001" summary="封装全局响应和状态码">
+      <created>1668223635743</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668223635743</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +148,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="封装全局响应和状态码" />
+    <option name="LAST_COMMIT_MESSAGE" value="封装全局响应和状态码" />
   </component>
 </project>

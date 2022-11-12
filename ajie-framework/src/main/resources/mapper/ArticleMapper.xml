@@ -9,24 +9,24 @@
             <result property="title" column="title" jdbcType="VARCHAR"/>
             <result property="content" column="content" jdbcType="VARCHAR"/>
             <result property="summary" column="summary" jdbcType="VARCHAR"/>
-            <result property="category_id" column="category_id" jdbcType="BIGINT"/>
+            <result property="categoryId" column="categoryId" jdbcType="BIGINT"/>
             <result property="thumbnail" column="thumbnail" jdbcType="VARCHAR"/>
-            <result property="is_top" column="is_top" jdbcType="CHAR"/>
+            <result property="isTop" column="isTop" jdbcType="CHAR"/>
             <result property="status" column="status" jdbcType="CHAR"/>
-            <result property="view_count" column="view_count" jdbcType="BIGINT"/>
-            <result property="is_comment" column="is_comment" jdbcType="CHAR"/>
-            <result property="create_by" column="create_by" jdbcType="BIGINT"/>
-            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
-            <result property="update_by" column="update_by" jdbcType="BIGINT"/>
-            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
-            <result property="del_flag" column="del_flag" jdbcType="INTEGER"/>
+            <result property="viewCount" column="viewCount" jdbcType="BIGINT"/>
+            <result property="isComment" column="isComment" jdbcType="CHAR"/>
+            <result property="createBy" column="createBy" jdbcType="BIGINT"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateBy" column="updateBy" jdbcType="BIGINT"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="delFlag" column="delFlag" jdbcType="INTEGER"/>
     </resultMap>
 
     <sql id="Base_Column_List">
         id,title,content,
-        summary,category_id,thumbnail,
-        is_top,status,view_count,
-        is_comment,create_by,create_time,
-        update_by,update_time,del_flag
+        summary,categoryId,thumbnail,
+        isTop,status,viewCount,
+        isComment,createBy,createTime,
+        updateBy,updateTime,delFlag
     </sql>
 </mapper>
