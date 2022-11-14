@@ -8,14 +8,17 @@ import com.ajie.model.vo.ArticleListVo;
 import com.ajie.model.vo.HotArticleVo;
 import com.ajie.model.vo.PageVo;
 import com.ajie.service.ArticleService;
+import com.ajie.service.CategoryService;
 import com.ajie.utils.BeanCopyUtils;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 /**
  * @author 16515
@@ -25,6 +28,9 @@ import java.util.Objects;
 @Service
 public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
         implements ArticleService {
+
+    @Resource
+    private CategoryService categoryService;
 
     @Override
     public ResponseResult getHotArticleList() {
@@ -58,6 +64,28 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
         //分页查询
         Page<Article> page = new Page<>(pageNum, pageSize);
         page(page, queryWrapper);
+
+        List<Article> articles = page.getRecords();
+
+        //根据articles中的categoryId查询categoryName
+        /*
+            articles = articles.stream()
+                .map(new Function<Article, Article>() {
+                    @Override
+                    public Article apply(Article article) {
+                        //获取分类id，查询分类信息，获取分类名称
+                        Category category = categoryService.getById(article.getCategoryId());
+                        String categoryName = category.getName();
+                        //设置分类名称
+                        article.setCategoryName(categoryName);
+                        return article;
+                    }
+                }).collect(Collectors.toList());
+         */
+        articles.stream()
+                .map(article -> article.setCategoryName(categoryService.getById(article.getCategoryId()).getName()))
+                .collect(Collectors.toList());
+
         //封装查询结果
         List<ArticleListVo> articleListVos = BeanCopyUtils.copyBeanList(page.getRecords(), ArticleListVo.class);
 

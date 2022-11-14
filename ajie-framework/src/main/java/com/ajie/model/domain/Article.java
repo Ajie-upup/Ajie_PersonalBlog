@@ -2,19 +2,22 @@ package com.ajie.model.domain;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * 文章表
+ *
  * @TableName ajie_article
  */
-@TableName(value ="ajie_article")
+@TableName(value = "ajie_article")
 @Data
+@Accessors(chain = true)
 public class Article implements Serializable {
     /**
-     * 
+     *
      */
     @TableId(type = IdType.AUTO)
     private Long id;
@@ -38,6 +41,12 @@ public class Article implements Serializable {
      * 所属分类id
      */
     private Long categoryId;
+
+    /**
+     * 分类名称
+     */
+    @TableField(exist = false)
+    private String categoryName;
 
     /**
      * 缩略图
@@ -65,22 +74,22 @@ public class Article implements Serializable {
     private String isComment;
 
     /**
-     * 
+     *
      */
     private Long createBy;
 
     /**
-     * 
+     *
      */
     private Date createTime;
 
     /**
-     * 
+     *
      */
     private Long updateBy;
 
     /**
-     * 
+     *
      */
     private Date updateTime;
 

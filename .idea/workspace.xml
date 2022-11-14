@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/ArticleListVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/PageVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/ArticleListVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/ArticleListVo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +123,11 @@
       <workItem from="1668161565082" duration="4001000" />
       <workItem from="1668216657686" duration="681000" />
       <workItem from="1668223414977" duration="246000" />
-      <workItem from="1668241459552" duration="7656000" />
+      <workItem from="1668241459552" duration="7750000" />
+      <workItem from="1668263661029" duration="159000" />
+      <workItem from="1668321788561" duration="687000" />
+      <workItem from="1668350993857" duration="12000" />
+      <workItem from="1668400128160" duration="1446000" />
     </task>
     <task id="LOCAL-00001" summary="封装全局响应和状态码">
       <created>1668223635743</created>
@@ -147,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668256471513</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完成查询文章信息list接口（返回值和请求体待封装）">
+      <created>1668258379859</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668258379859</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +178,7 @@
     <MESSAGE value="封装全局响应和状态码" />
     <MESSAGE value="封装全局配置网络跨域，系统常量，Bean拷贝（对象，list），完成查询热门文章的接口（封装返回vo对象，返回用户需要的信息）" />
     <MESSAGE value="完成查询文章分类种类的接口（先获取文章表中文章分类id，根据id查询分类种类）" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成查询文章分类种类的接口（先获取文章表中文章分类id，根据id查询分类种类）" />
+    <MESSAGE value="完成查询文章信息list接口（返回值和请求体待封装）" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成查询文章信息list接口（返回值和请求体待封装）" />
   </component>
 </project>

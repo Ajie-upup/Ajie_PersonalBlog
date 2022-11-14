@@ -21,7 +21,7 @@ public class ArticleListVo {
 
     private String summary;
 
-    private Long categoryName;
+    private String categoryName;
 
     private String thumbnail;
 
