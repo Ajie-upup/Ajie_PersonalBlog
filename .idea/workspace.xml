@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/LinkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/ArticleDetailVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/LinkVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/ArticleListVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/ArticleListVo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,10 +90,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-blog\src\main\resources\mapper" />
+      <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-blog\src\main\resources" />
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-blog\src\main\java\com\ajie\service\impl" />
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-blog\src\main\java\com\ajie\service" />
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-blog\src\main\java\com\ajie\mapper" />
-      <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\java\com\ajie\model\domain" />
     </key>
   </component>
   <component name="RunManager">
@@ -127,7 +131,7 @@
       <workItem from="1668263661029" duration="159000" />
       <workItem from="1668321788561" duration="687000" />
       <workItem from="1668350993857" duration="12000" />
-      <workItem from="1668400128160" duration="1446000" />
+      <workItem from="1668400128160" duration="4883000" />
     </task>
     <task id="LOCAL-00001" summary="封装全局响应和状态码">
       <created>1668223635743</created>
@@ -157,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668258379859</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完善首页查询文章信息list接口，配置fastjson统一时间日期格式">
+      <created>1668401772219</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668401772219</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +190,7 @@
     <MESSAGE value="封装全局配置网络跨域，系统常量，Bean拷贝（对象，list），完成查询热门文章的接口（封装返回vo对象，返回用户需要的信息）" />
     <MESSAGE value="完成查询文章分类种类的接口（先获取文章表中文章分类id，根据id查询分类种类）" />
     <MESSAGE value="完成查询文章信息list接口（返回值和请求体待封装）" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成查询文章信息list接口（返回值和请求体待封装）" />
+    <MESSAGE value="完善首页查询文章信息list接口，配置fastjson统一时间日期格式" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善首页查询文章信息list接口，配置fastjson统一时间日期格式" />
   </component>
 </project>

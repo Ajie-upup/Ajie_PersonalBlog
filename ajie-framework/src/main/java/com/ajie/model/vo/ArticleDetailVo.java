@@ -8,26 +8,25 @@ import java.util.Date;
 
 /**
  * @Author: ajie
- * @Date: 2022/11/12
+ * @Date: 2022/11/14
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ArticleListVo {
-
-    private Long id;
-
-    private String title;
-
-    private String summary;
+public class ArticleDetailVo {
+    private Long categoryId;
 
     private String categoryName;
 
-    private String thumbnail;
-
-    private Long viewCount;
+    private String content;
 
     private Date createTime;
 
+    private Long id;
 
+    private String isComment;
+
+    private String title;
+
+    private Long viewCount;
 }

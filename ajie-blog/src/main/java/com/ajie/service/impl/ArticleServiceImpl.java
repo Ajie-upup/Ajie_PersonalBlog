@@ -4,6 +4,8 @@ import com.ajie.common.ResponseResult;
 import com.ajie.constants.SystemConstants;
 import com.ajie.mapper.ArticleMapper;
 import com.ajie.model.domain.Article;
+import com.ajie.model.domain.Category;
+import com.ajie.model.vo.ArticleDetailVo;
 import com.ajie.model.vo.ArticleListVo;
 import com.ajie.model.vo.HotArticleVo;
 import com.ajie.model.vo.PageVo;
@@ -92,6 +94,29 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
         PageVo pageVo = new PageVo(articleListVos, page.getTotal());
 
         return ResponseResult.okResult(pageVo);
+    }
+
+    /**
+     * 根据id查询文章的详细信息
+     *
+     * @param id 文章id
+     * @return 封装好的需要展示的文章信息
+     */
+    @Override
+    public ResponseResult getArticleDetail(Long id) {
+        //根据id查询文章信息
+        Article article = this.getById(id);
+
+        //拷贝文章信息到封装好的vo对象中
+        ArticleDetailVo articleDetailVo = BeanCopyUtils.copyBean(article, ArticleDetailVo.class);
+
+        //根据id查询分类信息，并设置到vo对象中
+        Long categoryId = articleDetailVo.getCategoryId();
+        Category category = categoryService.getById(categoryId);
+        if (category != null) {
+            articleDetailVo.setCategoryName(category.getName());
+        }
+        return ResponseResult.okResult(articleDetailVo);
     }
 }
 
