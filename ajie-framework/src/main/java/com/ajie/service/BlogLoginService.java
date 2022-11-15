@@ -9,4 +9,8 @@ import com.ajie.model.domain.User;
  */
 public interface BlogLoginService {
     ResponseResult login(User user);
+
+
+    ResponseResult logout();
+
 }

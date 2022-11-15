@@ -24,10 +24,18 @@ public class BlogLoginController {
 
     @PostMapping("/login")
     public ResponseResult login(@RequestBody User user) {
-        if (StringUtils.hasText(user.getUserName())) {
+        if (!StringUtils.hasText(user.getUserName())) {
             //提示必须用户名不能为空
             throw new SystemException(AppHttpCodeEnum.REQUIRE_USERNAME);
         }
         return blogLoginService.login(user);
     }
+
+    @PostMapping("/logout")
+    public ResponseResult logout() {
+
+        return blogLoginService.logout();
+    }
+
+
 }
