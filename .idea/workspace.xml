@@ -4,39 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="实现spring security校验的登录功能（配置相关配置）">
-      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/BlogLoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/config/FastJsonRedisSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/handler/security/AccessDeniedHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/handler/security/AuthenticationEntryPointImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/BlogUserLoginVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/UserInfoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/BlogLoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/BlogLoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/RedisCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/WebUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+    <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/exception/SystemException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/handler/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/mapper/ArticleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/mapper/CategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/mapper/LinkMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/mapper/LinkMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/LinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/LinkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/service/impl/LinkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/LinkServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/resources/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/resources/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/resources/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/resources/mapper/LinkMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/resources/mapper/LinkMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/BlogLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/BlogLoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +130,7 @@
       <workItem from="1668350993857" duration="12000" />
       <workItem from="1668400128160" duration="7961000" />
       <workItem from="1668476530316" duration="11000" />
-      <workItem from="1668490000619" duration="6552000" />
+      <workItem from="1668490000619" duration="7912000" />
     </task>
     <task id="LOCAL-00001" summary="封装全局响应和状态码">
       <created>1668223635743</created>
@@ -202,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668405063026</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="实现spring security校验的登录功能（配置相关配置，实现认证过滤器，实现认证授权异常分开处理）">
+      <created>1668498127074</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668498127074</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +205,7 @@
     <MESSAGE value="完成查询文章信息list接口（返回值和请求体待封装）" />
     <MESSAGE value="完善首页查询文章信息list接口，配置fastjson统一时间日期格式" />
     <MESSAGE value="完成查询文章详细信息的接口，完成查询所有友链表的接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成查询文章详细信息的接口，完成查询所有友链表的接口" />
+    <MESSAGE value="实现spring security校验的登录功能（配置相关配置，实现认证过滤器，实现认证授权异常分开处理）" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现spring security校验的登录功能（配置相关配置，实现认证过滤器，实现认证授权异常分开处理）" />
   </component>
 </project>
