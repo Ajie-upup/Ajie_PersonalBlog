@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="wan">
+    <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/handler/mybatisplus/MyMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/request/AddCommentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/CommentVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/SecurityUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/BlogLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/BlogLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/handler/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/handler/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/BlogLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/BlogLoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/BlogLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/BlogLoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/LinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/LinkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/common/AppHttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/common/AppHttpCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +92,11 @@
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-blog\src\main\resources\sql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\java\com\ajie\service\impl" />
+      <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\java\com\ajie\service" />
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\resources\mapper" />
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\java\com\ajie\mapper" />
-      <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\resources" />
-      <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-blog\src\main\resources\mapper" />
-      <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-blog\src\main\java\com\ajie\service\impl" />
+      <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\java\com\ajie\model\domain" />
     </key>
   </component>
   <component name="RunManager">
@@ -132,7 +136,8 @@
       <workItem from="1668350993857" duration="12000" />
       <workItem from="1668400128160" duration="7961000" />
       <workItem from="1668476530316" duration="11000" />
-      <workItem from="1668490000619" duration="9528000" />
+      <workItem from="1668490000619" duration="9685000" />
+      <workItem from="1668570684472" duration="9735000" />
     </task>
     <task id="LOCAL-00001" summary="封装全局响应和状态码">
       <created>1668223635743</created>
@@ -190,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668499391488</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="完成用户注销接口（清除token，以及根据userid清除redis中的数据）">
+      <created>1668500975089</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668500975089</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +228,7 @@
     <MESSAGE value="完成查询文章详细信息的接口，完成查询所有友链表的接口" />
     <MESSAGE value="实现spring security校验的登录功能（配置相关配置，实现认证过滤器，实现认证授权异常分开处理）" />
     <MESSAGE value="自定义系统异常和统一异常处理类" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义系统异常和统一异常处理类" />
+    <MESSAGE value="完成用户注销接口（清除token，以及根据userid清除redis中的数据）" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成用户注销接口（清除token，以及根据userid清除redis中的数据）" />
   </component>
 </project>

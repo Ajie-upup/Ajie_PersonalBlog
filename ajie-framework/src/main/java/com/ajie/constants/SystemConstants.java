@@ -27,7 +27,19 @@ public class SystemConstants {
     /**
      * 用户请求携带的token
      */
-    public static final String TOKEN ="token";
+    public static final String TOKEN = "token";
 
+    /**
+     * 文章评论为根评论
+     */
+    public static final long ARTICLE_ROOT_ID = -1;
+
+    /**
+     * 评论类型
+     * 1 --- 友链表评论
+     * 0 --- 文章评论
+     */
+    public static final String ARTICLE_COMMENT = "0";
+    public static final String LINK_COMMENT = "1";
 
 }
