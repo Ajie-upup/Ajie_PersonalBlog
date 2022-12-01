@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/handler/mybatisplus/MyMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/request/AddCommentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/CommentVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/SecurityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-blog/src/test/java/com/ajie/OSSTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/UploadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/OssUploadServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/PathUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/LinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/LinkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/common/AppHttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/common/AppHttpCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +102,23 @@
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\java\com\ajie\model\domain" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.AjieBlogApplication">
+    <configuration name="OSSTest.OssTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ajie-blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ajie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ajie" />
+      <option name="MAIN_CLASS_NAME" value="com.ajie.OSSTest" />
+      <option name="METHOD_NAME" value="OssTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AjieBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ajie-blog" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ajie.AjieBlogApplication" />
@@ -116,6 +135,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AjieBlogApplication" />
+        <item itemvalue="JUnit.OSSTest.OssTest" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +157,12 @@
       <workItem from="1668400128160" duration="7961000" />
       <workItem from="1668476530316" duration="11000" />
       <workItem from="1668490000619" duration="9685000" />
-      <workItem from="1668570684472" duration="9735000" />
+      <workItem from="1668570684472" duration="10656000" />
+      <workItem from="1668735933046" duration="1620000" />
+      <workItem from="1668752390064" duration="4871000" />
+      <workItem from="1669083467355" duration="361000" />
+      <workItem from="1669121564704" duration="27000" />
+      <workItem from="1669893903671" duration="4215000" />
     </task>
     <task id="LOCAL-00001" summary="封装全局响应和状态码">
       <created>1668223635743</created>
@@ -202,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668500975089</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="完成查询文章评论接口（二级评论返回信息的封装），发送评论的接口，整合友链表评论查询和发送评论功能">
+      <created>1668583088320</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668583088320</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +261,7 @@
     <MESSAGE value="实现spring security校验的登录功能（配置相关配置，实现认证过滤器，实现认证授权异常分开处理）" />
     <MESSAGE value="自定义系统异常和统一异常处理类" />
     <MESSAGE value="完成用户注销接口（清除token，以及根据userid清除redis中的数据）" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成用户注销接口（清除token，以及根据userid清除redis中的数据）" />
+    <MESSAGE value="完成查询文章评论接口（二级评论返回信息的封装），发送评论的接口，整合友链表评论查询和发送评论功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成查询文章评论接口（二级评论返回信息的封装），发送评论的接口，整合友链表评论查询和发送评论功能" />
   </component>
 </project>

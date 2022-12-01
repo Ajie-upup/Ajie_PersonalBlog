@@ -20,3 +20,8 @@ mybatis-plus:
       logic-delete-value: 1
       logic-not-delete-value: 0
       id-type: auto
+#  定义七牛云的AK，SK
+oss:
+  accessKey: XXXXXXXXXXXX
+  secretKey: XXXXXXXXXX
+  bucket: XXXXXXXXXXXX

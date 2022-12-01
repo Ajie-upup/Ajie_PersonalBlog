@@ -1,5 +1,6 @@
 package com.ajie.service;
 
+import com.ajie.common.ResponseResult;
 import com.ajie.model.domain.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -9,5 +10,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
 * @createDate 2022-11-16 13:29:16
 */
 public interface UserService extends IService<User> {
+    /**
+     * 获取用户信息
+     *
+     * @return
+     */
+    ResponseResult getUserInfo();
 
 }
