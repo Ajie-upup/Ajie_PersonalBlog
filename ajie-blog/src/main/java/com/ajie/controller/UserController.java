@@ -1,5 +1,6 @@
 package com.ajie.controller;
 
+import com.ajie.annotation.SystemLog;
 import com.ajie.common.ResponseResult;
 import com.ajie.model.domain.User;
 import com.ajie.service.UserService;
@@ -34,6 +35,7 @@ public class UserController {
      * @return
      */
     @PutMapping("/userInfo")
+    @SystemLog(businessName = "修改用户信息")
     public ResponseResult updateUserInfo(@RequestBody User user) {
         return userService.updateUserInfo(user);
     }
