@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/job/TestJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/job/UpdateViewCountJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/runner/ViewCountRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/AjieBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/AjieBlogApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/job/TestJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/job/TestJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/RedisCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/RedisCache.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +161,7 @@
       <workItem from="1668752390064" duration="4871000" />
       <workItem from="1669083467355" duration="361000" />
       <workItem from="1669121564704" duration="27000" />
-      <workItem from="1669893903671" duration="9842000" />
+      <workItem from="1669893903671" duration="12864000" />
     </task>
     <task id="LOCAL-00001" summary="封装全局响应和状态码">
       <created>1668223635743</created>
@@ -252,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669902840366</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="测试CommandLineRunner实现项目启动时预处理，和定时任务处理">
+      <created>1669903883839</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669903883839</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +300,7 @@
     <MESSAGE value="修改个人信息接口" />
     <MESSAGE value="完成用户注册接口" />
     <MESSAGE value="AOP实现日志记录代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOP实现日志记录代码" />
+    <MESSAGE value="测试CommandLineRunner实现项目启动时预处理，和定时任务处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试CommandLineRunner实现项目启动时预处理，和定时任务处理" />
   </component>
 </project>

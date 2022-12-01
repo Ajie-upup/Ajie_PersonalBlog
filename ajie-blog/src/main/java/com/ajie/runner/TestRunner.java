@@ -1,7 +1,6 @@
 package com.ajie.runner;
 
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,10 +10,9 @@ import org.springframework.stereotype.Component;
  * @Date: 2022/12/1
  */
 @Component
-@EnableScheduling
 public class TestRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("程序初始化");
+//        System.out.println("程序初始化");
     }
 }

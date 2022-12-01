@@ -42,4 +42,5 @@ public class SystemConstants {
     public static final String ARTICLE_COMMENT = "0";
     public static final String LINK_COMMENT = "1";
 
+    public static final String UPDATE_ARTICLE_VIEW_COUNT = "article:viewCount";
 }

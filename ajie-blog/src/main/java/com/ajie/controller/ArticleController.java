@@ -2,10 +2,7 @@ package com.ajie.controller;
 
 import com.ajie.common.ResponseResult;
 import com.ajie.service.ArticleService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -30,6 +27,18 @@ public class ArticleController {
         return articleService.getHotArticleList();
     }
 
+
+    /**
+     * 根据id查询文章的详细信息
+     *
+     * @param id 文章id
+     * @return 封装好的需要展示的文章信息
+     */
+    @GetMapping("/{id}")
+    public ResponseResult getArticleDetail(@PathVariable("id") Long id) {
+        return articleService.getArticleDetail(id);
+    }
+
     /**
      * 获取首页文章信息 （包含分页）
      *
@@ -43,14 +52,10 @@ public class ArticleController {
         return articleService.getArticleList(pageNum, pageSize, categoryId);
     }
 
-    /**
-     * 根据id查询文章的详细信息
-     *
-     * @param id 文章id
-     * @return 封装好的需要展示的文章信息
-     */
-    @GetMapping("/{id}")
-    public ResponseResult getArticleDetail(@PathVariable("id") Long id) {
-        return articleService.getArticleDetail(id);
+    @PutMapping("/updateViewCount/{id}")
+    public ResponseResult updateViewCount(@PathVariable("id") Long id) {
+        return articleService.updateViewCount(id);
     }
+
+
 }

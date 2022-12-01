@@ -12,6 +12,7 @@ import com.ajie.model.vo.PageVo;
 import com.ajie.service.ArticleService;
 import com.ajie.service.CategoryService;
 import com.ajie.utils.BeanCopyUtils;
+import com.ajie.utils.RedisCache;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -33,6 +34,9 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
 
     @Resource
     private CategoryService categoryService;
+
+    @Resource
+    private RedisCache redisCache;
 
     @Override
     public ResponseResult getHotArticleList() {
@@ -107,6 +111,10 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
         //根据id查询文章信息
         Article article = this.getById(id);
 
+        //从redis中获取viewCount
+        Integer viewCount = redisCache.getCacheMapValue(SystemConstants.UPDATE_ARTICLE_VIEW_COUNT, id.toString());
+        article.setViewCount(viewCount.longValue());
+
         //拷贝文章信息到封装好的vo对象中
         ArticleDetailVo articleDetailVo = BeanCopyUtils.copyBean(article, ArticleDetailVo.class);
 
@@ -117,6 +125,13 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
             articleDetailVo.setCategoryName(category.getName());
         }
         return ResponseResult.okResult(articleDetailVo);
+    }
+
+    @Override
+    public ResponseResult updateViewCount(Long id) {
+        //更新redis中对应id的viewCount信息
+        redisCache.incrementCacheMapValue(SystemConstants.UPDATE_ARTICLE_VIEW_COUNT, id.toString(), 1);
+        return ResponseResult.okResult();
     }
 }
 

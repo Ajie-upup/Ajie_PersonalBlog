@@ -101,4 +101,9 @@ public class Article implements Serializable {
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
+
+    public Article(Long id, long viewCount) {
+        this.id = id;
+        this.viewCount = viewCount;
+    }
 }
