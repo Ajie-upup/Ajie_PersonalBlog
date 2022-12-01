@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-blog/src/test/java/com/ajie/OSSTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/UploadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/OssUploadServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/PathUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/common/AppHttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/common/AppHttpCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
@@ -162,7 +153,7 @@
       <workItem from="1668752390064" duration="4871000" />
       <workItem from="1669083467355" duration="361000" />
       <workItem from="1669121564704" duration="27000" />
-      <workItem from="1669893903671" duration="4215000" />
+      <workItem from="1669893903671" duration="4894000" />
     </task>
     <task id="LOCAL-00001" summary="封装全局响应和状态码">
       <created>1668223635743</created>
@@ -234,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668583088320</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="完成上传图片到七牛云地址的接口（文件名称输入格式，以及输出格式转换）">
+      <created>1669898284062</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669898284062</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +260,7 @@
     <MESSAGE value="自定义系统异常和统一异常处理类" />
     <MESSAGE value="完成用户注销接口（清除token，以及根据userid清除redis中的数据）" />
     <MESSAGE value="完成查询文章评论接口（二级评论返回信息的封装），发送评论的接口，整合友链表评论查询和发送评论功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成查询文章评论接口（二级评论返回信息的封装），发送评论的接口，整合友链表评论查询和发送评论功能" />
+    <MESSAGE value="完成上传图片到七牛云地址的接口（文件名称输入格式，以及输出格式转换）" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成上传图片到七牛云地址的接口（文件名称输入格式，以及输出格式转换）" />
   </component>
 </project>

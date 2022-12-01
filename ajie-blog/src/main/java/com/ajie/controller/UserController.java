@@ -1,10 +1,9 @@
 package com.ajie.controller;
 
 import com.ajie.common.ResponseResult;
+import com.ajie.model.domain.User;
 import com.ajie.service.UserService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -29,8 +28,15 @@ public class UserController {
         return userService.getUserInfo();
     }
 
-
-
+    /**
+     * 修改用户信息
+     *
+     * @return
+     */
+    @PutMapping("/userInfo")
+    public ResponseResult updateUserInfo(@RequestBody User user) {
+        return userService.updateUserInfo(user);
+    }
 
 
 }
