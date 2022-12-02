@@ -5,7 +5,6 @@ import com.ajie.model.domain.Article;
 import com.ajie.service.ArticleService;
 import com.ajie.utils.RedisCache;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -16,7 +15,7 @@ import java.util.stream.Collectors;
  * @Author: ajie
  * @Date: 2022/12/1
  */
-@Component
+//@Component
 public class UpdateViewCountJob {
 
     @Resource
@@ -37,6 +36,5 @@ public class UpdateViewCountJob {
 
         //将更新的数据添加到数据库中
         articleService.updateBatchById(articles);
-
     }
 }

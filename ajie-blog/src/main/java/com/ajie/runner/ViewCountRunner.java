@@ -5,7 +5,6 @@ import com.ajie.mapper.ArticleMapper;
 import com.ajie.model.domain.Article;
 import com.ajie.utils.RedisCache;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -16,7 +15,7 @@ import java.util.stream.Collectors;
  * @Author: ajie
  * @Date: 2022/12/1
  */
-@Component
+//@Component
 public class ViewCountRunner implements CommandLineRunner {
 
     @Resource
