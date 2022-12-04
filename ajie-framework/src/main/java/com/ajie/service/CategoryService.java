@@ -3,7 +3,10 @@ package com.ajie.service;
 
 import com.ajie.common.ResponseResult;
 import com.ajie.model.domain.Category;
+import com.ajie.model.vo.CategoryVo;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
 * @author 16515
@@ -13,4 +16,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface CategoryService extends IService<Category> {
 
     ResponseResult getCategoryList();
+
+    List<CategoryVo> listAllCategory();
+
 }

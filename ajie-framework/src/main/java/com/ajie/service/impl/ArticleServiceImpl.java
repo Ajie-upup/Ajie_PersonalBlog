@@ -4,12 +4,12 @@ import com.ajie.common.ResponseResult;
 import com.ajie.constants.SystemConstants;
 import com.ajie.mapper.ArticleMapper;
 import com.ajie.model.domain.Article;
+import com.ajie.model.domain.ArticleTag;
 import com.ajie.model.domain.Category;
-import com.ajie.model.vo.ArticleDetailVo;
-import com.ajie.model.vo.ArticleListVo;
-import com.ajie.model.vo.HotArticleVo;
-import com.ajie.model.vo.PageVo;
+import com.ajie.model.dto.AddArticleDto;
+import com.ajie.model.vo.*;
 import com.ajie.service.ArticleService;
+import com.ajie.service.ArticleTagService;
 import com.ajie.service.CategoryService;
 import com.ajie.utils.BeanCopyUtils;
 import com.ajie.utils.RedisCache;
@@ -17,8 +17,10 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -37,6 +39,9 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
 
     @Resource
     private RedisCache redisCache;
+
+    @Resource
+    private ArticleTagService articleTagService;
 
     @Override
     public ResponseResult getHotArticleList() {
@@ -88,12 +93,12 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
                     }
                 }).collect(Collectors.toList());
          */
-        articles.stream()
+        List<Article> articleList = articles.stream()
                 .map(article -> article.setCategoryName(categoryService.getById(article.getCategoryId()).getName()))
                 .collect(Collectors.toList());
 
         //封装查询结果
-        List<ArticleListVo> articleListVos = BeanCopyUtils.copyBeanList(page.getRecords(), ArticleListVo.class);
+        List<ArticleListVo> articleListVos = BeanCopyUtils.copyBeanList(articleList, ArticleListVo.class);
 
         PageVo pageVo = new PageVo(articleListVos, page.getTotal());
 
@@ -131,6 +136,60 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
     public ResponseResult updateViewCount(Long id) {
         //更新redis中对应id的viewCount信息
         redisCache.incrementCacheMapValue(SystemConstants.UPDATE_ARTICLE_VIEW_COUNT, id.toString(), 1);
+        return ResponseResult.okResult();
+    }
+
+    @Override
+    @Transactional
+    public ResponseResult addArticle(AddArticleDto articleDto) {
+        //添加 博客
+        Article article = BeanCopyUtils.copyBean(articleDto, Article.class);
+        save(article);
+
+        //添加 博客和标签的关联
+        List<ArticleTag> articleTags = articleDto.getTags().stream()
+                .map(tagId -> new ArticleTag(article.getId(), tagId))
+                .collect(Collectors.toList());
+        articleTagService.saveBatch(articleTags);
+        return ResponseResult.okResult();
+    }
+
+    @Override
+    public ResponseResult getAdminArticleList(Integer pageNum, Integer pageSize, String title, String summary) {
+        LambdaQueryWrapper<Article> queryWrapper = new LambdaQueryWrapper<>();
+
+        queryWrapper.like(Objects.nonNull(title), Article::getTitle, title);
+        queryWrapper.like(Objects.nonNull(summary), Article::getSummary, summary);
+        queryWrapper.orderByDesc(Article::getIsTop);
+
+        Page<Article> page = new Page<>(pageNum, pageSize);
+        page(page, queryWrapper);
+
+        List<AdminArticleVo> adminArticleVos = BeanCopyUtils.copyBeanList(page.getRecords(), AdminArticleVo.class);
+
+        PageVo pageVo = new PageVo(adminArticleVos, page.getTotal());
+
+        return ResponseResult.okResult(pageVo);
+    }
+
+    @Override
+    public ResponseResult getAdminArticle(Long id) {
+        Article article = this.getById(id);
+        return ResponseResult.okResult(article);
+    }
+
+    @Override
+    public ResponseResult updateAdminArticle(AddArticleDto articleDto) {
+        //更新文章
+        Article article = BeanCopyUtils.copyBean(articleDto, Article.class);
+        article.setUpdateTime(new Date());
+        this.update(article, null);
+        return ResponseResult.okResult();
+    }
+
+    @Override
+    public ResponseResult deleteAdminArticle(Long id) {
+        this.removeById(id);
         return ResponseResult.okResult();
     }
 }

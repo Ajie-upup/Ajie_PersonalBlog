@@ -3,6 +3,7 @@ package com.ajie.service;
 
 import com.ajie.common.ResponseResult;
 import com.ajie.model.domain.Article;
+import com.ajie.model.dto.AddArticleDto;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -25,4 +26,14 @@ public interface ArticleService extends IService<Article> {
     ResponseResult getArticleDetail(Long id);
 
     ResponseResult updateViewCount(Long id);
+
+    ResponseResult addArticle(AddArticleDto articleDto);
+
+    ResponseResult getAdminArticleList(Integer pageNum, Integer pageSize, String title, String summary);
+
+    ResponseResult getAdminArticle(Long id);
+
+    ResponseResult updateAdminArticle(AddArticleDto articleDto);
+
+    ResponseResult deleteAdminArticle(Long id);
 }

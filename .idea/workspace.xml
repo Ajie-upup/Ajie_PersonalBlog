@@ -4,14 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="添加swagger2测试接口文档">
-      <change afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/config/SwaggerConfig.java" afterDir="false" />
+    <list default="true" id="22f6bb39-2049-461d-88e4-d811a01f0e39" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ajie-admin/src/main/java/com/ajie/BlogAdminApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-admin/src/main/java/com/ajie/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-admin/src/main/java/com/ajie/controller/AdminArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-admin/src/main/java/com/ajie/controller/AdminMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-admin/src/main/java/com/ajie/controller/AdminUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-admin/src/main/java/com/ajie/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-admin/src/main/java/com/ajie/controller/LoginAdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-admin/src/main/java/com/ajie/controller/TagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-admin/src/main/java/com/ajie/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-admin/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/dto/AddArticleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/dto/TagListDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/request/AddTagRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/AdminArticleVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/AdminUserInfoVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/ExcelCategoryVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/MenuVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/RoutersVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/TagVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/LoginAdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/LoginAdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/PermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/AjieBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/AjieBlogApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/job/UpdateViewCountJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/job/UpdateViewCountJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/runner/ViewCountRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/java/com/ajie/runner/ViewCountRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajie-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-blog/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-blog/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/constants/SystemConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/CategoryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/CategoryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/PageVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/model/vo/PageVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/OssUploadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/OssUploadServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/SecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajie-framework/src/main/java/com/ajie/utils/WebUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,34 +87,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;SELECTIVE&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/1ajieStudy/study-project/Ajie_PersonalBlog/ajie-framework/src/main/java/com/ajie/config&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;bec8a762048cc5eb3895414a7843c2a9&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "SELECTIVE",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/Desktop/新建文件夹/sgblog",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "bec8a762048cc5eb3895414a7843c2a9"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -89,14 +125,17 @@
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-blog\src\main\resources\sql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\resources\mapper" />
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\java\com\ajie\service\impl" />
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\java\com\ajie\service" />
-      <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\resources\mapper" />
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\java\com\ajie\mapper" />
       <recent name="E:\1ajieStudy\study-project\Ajie_PersonalBlog\ajie-framework\src\main\java\com\ajie\model\domain" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ajie.service" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AjieBlogApplication">
+  <component name="RunManager" selected="Spring Boot.BlogAdminApplication">
     <configuration name="OSSTest.OssTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ajie-blog" />
       <extension name="coverage">
@@ -126,8 +165,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BlogAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ajie-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ajie.BlogAdminApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ajie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.BlogAdminApplication" />
         <item itemvalue="Spring Boot.AjieBlogApplication" />
         <item itemvalue="JUnit.OSSTest.OssTest" />
       </list>
@@ -157,7 +210,10 @@
       <workItem from="1669083467355" duration="361000" />
       <workItem from="1669121564704" duration="27000" />
       <workItem from="1669893903671" duration="13400000" />
-      <workItem from="1669955273101" duration="1632000" />
+      <workItem from="1669955273101" duration="3438000" />
+      <workItem from="1669965065139" duration="8592000" />
+      <workItem from="1670044994520" duration="17049000" />
+      <workItem from="1670080556234" duration="7458000" />
     </task>
     <task id="LOCAL-00001" summary="封装全局响应和状态码">
       <created>1668223635743</created>
@@ -271,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669906977077</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="添加swagger2测试接口文档">
+      <created>1669957015037</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669957015037</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,6 +368,7 @@
     <MESSAGE value="AOP实现日志记录代码" />
     <MESSAGE value="测试CommandLineRunner实现项目启动时预处理，和定时任务处理" />
     <MESSAGE value="完成更新用户浏览量的接口，利用redis缓存解决访问量过大产生的问题（初始化redis数据，更新接口数据，同步redis数据到数据库，修改接口从redis中查询浏览量）" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成更新用户浏览量的接口，利用redis缓存解决访问量过大产生的问题（初始化redis数据，更新接口数据，同步redis数据到数据库，修改接口从redis中查询浏览量）" />
+    <MESSAGE value="添加swagger2测试接口文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加swagger2测试接口文档" />
   </component>
 </project>

@@ -14,8 +14,6 @@ import com.qiniu.storage.UploadManager;
 import com.qiniu.storage.model.DefaultPutRet;
 import com.qiniu.util.Auth;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.InputStream;
@@ -24,8 +22,8 @@ import java.io.InputStream;
  * @Author: ajie
  * @Date: 2022/12/1
  */
-@Service
-@ConfigurationProperties(prefix = "oss")
+//@Service
+//@ConfigurationProperties(prefix = "oss")
 public class OssUploadServiceImpl implements UploadService {
     @Override
     public ResponseResult uploadImg(MultipartFile img) {

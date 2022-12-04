@@ -43,4 +43,15 @@ public class SystemConstants {
     public static final String LINK_COMMENT = "1";
 
     public static final String UPDATE_ARTICLE_VIEW_COUNT = "article:viewCount";
+    public static final Long IS_ADMIN = 1L;
+    public static final String MENU = "C";
+    public static final String BUTTON = "F";
+    public static final String MENU_STATUS_NORMAL = "0";
+    public static final String ADMIN_LOGIN = "adminLogin:";
+
+    /**
+     * 正常状态
+     */
+    public static final String NORMAL = "0";
+    public static final String ADMIN = "1";
 }

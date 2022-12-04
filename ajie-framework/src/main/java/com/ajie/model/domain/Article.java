@@ -1,7 +1,9 @@
 package com.ajie.model.domain;
 
 import com.baomidou.mybatisplus.annotation.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
@@ -15,6 +17,8 @@ import java.util.Date;
 @TableName(value = "ajie_article")
 @Data
 @Accessors(chain = true)
+@AllArgsConstructor
+@NoArgsConstructor
 public class Article implements Serializable {
     /**
      *
@@ -73,24 +77,16 @@ public class Article implements Serializable {
      */
     private String isComment;
 
-    /**
-     *
-     */
+    @TableField(fill = FieldFill.INSERT)
     private Long createBy;
 
-    /**
-     *
-     */
+    @TableField(fill = FieldFill.INSERT)
     private Date createTime;
 
-    /**
-     *
-     */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Long updateBy;
 
-    /**
-     *
-     */
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     /**

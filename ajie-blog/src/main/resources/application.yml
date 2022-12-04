@@ -22,6 +22,6 @@ mybatis-plus:
       id-type: auto
 #  定义七牛云的AK，SK
 oss:
-  accessKey: XXXXXXXXXXXX
-  secretKey: XXXXXXXXXX
-  bucket: XXXXXXXXXXXX
+  accessKey: Wk7aadGXuWGYsuJa7_IvAQo90HinZzWHYBlFRRFT
+  secretKey: fpfwQSq2zFwnQZvXQEVb_AE_yLxGn0REyKTSReyU
+  bucket: ajie-blog
